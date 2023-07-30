@@ -1,0 +1,298 @@
+header {
+  background-color: #2a2f4f;
+  color: #fff;
+  padding: 1rem;
+}
+
+
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-left: 80%;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+
+
+#box {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-between;
+  margin-left: 50px;
+  gap: 10px;
+}
+
+.text {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 10px;
+}
+
+h1 {
+  grid-column: 1/2;
+  height: 10%;
+  margin-top: 4%;
+}
+
+#name {
+  font-size: 30px;
+
+
+}
+
+.instruction {
+  font-size: 35px;
+}
+
+.exam {
+  margin-top: 20px;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+#backgroud {
+  grid-column: 2/3;
+}
+
+.imgbg {
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+#strbtn {
+  background-color: #2a2f4f;
+  border-radius: 10px;
+  color: white;
+  width: 40%;
+  height: 10%;
+  border: #2a2f4f solid 1px;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+#regestrationbtn{
+  font-size: 25px;
+}
+#login{
+  font-size: 25px;
+}
+#strbtn:hover {
+  cursor: pointer;
+  background-color: rgb(6, 211, 242);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+h1::after {
+  content: " ";
+  animation: animate 5s infinite ease-in-out;
+  animation-fill-mode: none;
+}
+
+@keyframes animate {
+  0% {
+    content: "W|";
+  }
+
+  8% {
+    content: "WE|";
+  }
+
+  16% {
+    content: "WEL|";
+  }
+
+  24% {
+    content: "WELC|";
+  }
+
+  32% {
+    content: "WELCO|";
+  }
+
+  40% {
+    content: "WELCOM|";
+  }
+
+  48% {
+    content: "WELCOME|";
+  }
+
+  56% {
+    content: "WELCOME |";
+  }
+
+  64% {
+    content: "WELCOME H|";
+  }
+
+  72% {
+    content: "WELCOME HE|";
+  }
+
+  80% {
+    content: "WELCOME HER|";
+  }
+
+  100% {
+    content: "WELCOME HERE |";
+  }
+}
+
+#strbtn:hover {
+  background-color: rgb(6, 211, 242);
+}
+
+#strbtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+
+/***************************************************Tablet****************************************************/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .imgbg {
+    height: 90%;
+    width: 100%;
+  }
+.welcome{
+  margin-top: 100px;
+}
+  #strbtn {
+    width: 60%;
+  }
+
+  .exam {
+    font-size: large;
+  }
+
+  #strbtn {
+    height: 40px;
+  }
+
+  .text {
+    gap: 25px;
+  }
+
+  .exam {
+    margin-top: 20px;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 5%;
+  }
+  #login{
+    font-size: 25px;
+    margin-left: -70px;
+    
+  }
+  #regestrationbtn{
+    font-size: 25px;
+  }
+}
+
+/***************************************************Mobile****************************************************/
+@media screen and (max-width: 480px) {
+
+
+  .btn {
+    display: inline;
+  }
+
+  .imglogo {
+    width: 80%;
+    margin: 0px;
+    margin-left: 20px;
+  }
+
+
+  #box {
+    display: inline;
+  }
+
+  .imgbg {
+    display: none;
+  }
+
+  #strbtn {
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-top: 0;
+  }
+
+  #name {
+    font-size: 20px;
+
+
+  }
+
+  .instruction {
+    font-size: 22px;
+  }
+
+  .exam {
+    margin-top: 20px;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 5%;
+  }
+
+  #footer {
+    font-size: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .welcome {
+    font-size: 20px;
+  }
+
+  header {
+    background-color: #2a2f4f;
+    color: #fff;
+    padding: 1rem;
+  }
+#login{
+  font-size: 15px;
+  margin-left: -70px;
+  
+}
+#regestrationbtn{
+  font-size: 15px;
+}
+
+}
